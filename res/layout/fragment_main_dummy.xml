@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                android:id="@+id/scroll_view_master"
+    
+    android:orientation="vertical"
+
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/image_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:scaleType="matrix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#999" />
+
+            <TextView
+                android:id="@+id/section_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textColor="#333"
+                android:textIsSelectable="true"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/section_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333"
+                android:textIsSelectable="true"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+                            android:id="@+id/footer"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dddddd"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="source:"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/source_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:gravity="left"
+                android:text="source"
+                android:textColor="#0000ff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="@drawable/button_selector"
+                android:padding="4dp"
+                android:text="share"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
